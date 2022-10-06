@@ -13,8 +13,9 @@ import settings from "../../Icons/Cog/Line.png";
 import logout from "../../Icons/Sign Out/Line.png";
 
 import "./sidebar.styles.scss";
+import { Outlet } from "react-router-dom";
 
-export default function SideBar() {
+export const SideBar = () => {
   return (
     <div className="sidebar-container">
       <div className="title">
@@ -71,6 +72,7 @@ export default function SideBar() {
         ></LinkItem>
         <LinkItem imageurl={logout} to={"logout"} label={"Logout"}></LinkItem>
       </div>
+      <Outlet />
     </div>
   );
-}
+};
