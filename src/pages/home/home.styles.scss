@@ -6,12 +6,46 @@
   gap: 10px;
 
   position: absolute;
-  width: 1031px;
-  height: 885px;
-  left: 278px;
-  top: 108px;
+  width: 72rem;
+  height: 65rem;
+  left: 23rem;
+  top: 8rem;
 
   /* gray/white */
 
   background: #ffffff;
+
+  .tabs-container {
+    display: flex;
+    flex-direction: row;
+    margin: 3% 0;
+  }
+
+  .infos-holder {
+    display: flex;
+    gap: 20%;
+    flex-wrap: wrap;
+  }
+  .separator {
+    width: 1050px;
+    height: 1px;
+
+    background: #e9eaec;
+  }
+  .profile-container {
+    gap: 1%;
+    display: flex;
+
+    margin: 3%;
+    width: 60rem;
+    justify-content: space-between;
+
+    span {
+      margin: 15%;
+    }
+    .de7k {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
 }

@@ -1,0 +1,37 @@
+.infopiece {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10%;
+
+  width: 25rem;
+  height: 5rem;
+  margin: 1%;
+  .holder {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0.2rem 0.9rem;
+    gap: 10px;
+
+    width: 590px;
+    height: 48px;
+
+    border: 1px solid #e9eaec;
+    border-radius: 10px;
+
+    /* gray/dark 2 */
+  }
+  .bigholder {
+    width: 76.5rem;
+    height: 48px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 22px 14px;
+    gap: 10px;
+
+    border: 1px solid #e9eaec;
+    border-radius: 10px;
+  }
+}

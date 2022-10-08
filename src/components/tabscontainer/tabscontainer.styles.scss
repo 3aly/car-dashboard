@@ -1,0 +1,24 @@
+.tab {
+  padding: 3% 2%;
+  margin-right: 2%;
+  font-weight: 1000;
+  font-size: 18px;
+  vertical-align: middle;
+  cursor: pointer;
+  &:hover {
+    background: rgba(161, 98, 247, 0.1);
+    border-radius: 4px;
+    transition: all 0.2s;
+  }
+}
+.active {
+  background: rgba(161, 98, 247, 0.1);
+  border-radius: 4px;
+
+  background: rgba(161, 98, 247, 0.1);
+  border-radius: 4px;
+
+  /* primary/dark 1 */
+
+  color: #242731;
+}

@@ -5,6 +5,13 @@
   a {
     margin-left: 3%;
     text-decoration: none;
+    padding: 0% 2%;
+    border-radius: 5px;
+    &:hover {
+      background-color: #a162f7;
+      color: white;
+      transition: all 0.2s;
+    }
   }
   margin: 8% 0%;
 }
