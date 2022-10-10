@@ -27,37 +27,49 @@ export const SideBar = () => {
 
       <div className="links-container">
         <LinkItem
+          className="navlink"
           imageurl={dashboard}
           to={"dashboard"}
           label={"Dashboard"}
         ></LinkItem>
-        <LinkItem imageurl={assets} to={"assets"} label={"Assets"}></LinkItem>
         <LinkItem
+          imageurl={assets}
+          to={"assets"}
+          label={"Assets"}
+          className="navlink"
+        ></LinkItem>
+        <LinkItem
+          className="navlink"
           imageurl={booking}
           to={"booking"}
           label={"Booking"}
         ></LinkItem>
         <LinkItem
+          className="navlink"
           imageurl={sellcars}
           to={"sellcars"}
           label={"SellCars"}
         ></LinkItem>
         <LinkItem
+          className="navlink"
           imageurl={buycars}
           to={"buycars"}
           label={"BuyCars"}
         ></LinkItem>
         <LinkItem
+          className="navlink"
           imageurl={services}
           to={"services"}
           label={"Services"}
         ></LinkItem>
         <LinkItem
+          className="navlink"
           imageurl={calender}
           to={"calender"}
           label={"Calender"}
         ></LinkItem>
         <LinkItem
+          className="navlink"
           imageurl={messages}
           to={"messages"}
           label={"Messages"}
@@ -66,13 +78,18 @@ export const SideBar = () => {
 
       <div className="settings-container">
         <LinkItem
+          className="navlink"
           imageurl={settings}
           to={"settings"}
           label={"Settings"}
         ></LinkItem>
-        <LinkItem imageurl={logout} to={"logout"} label={"Logout"}></LinkItem>
+        <LinkItem
+          imageurl={logout}
+          to={"logout"}
+          label={"Logout"}
+          className="navlink"
+        ></LinkItem>
       </div>
-      <Outlet />
     </div>
   );
 };

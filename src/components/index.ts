@@ -1,1 +1,0 @@
-export {infopiece} from './infopiece';

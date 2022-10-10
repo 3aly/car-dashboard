@@ -4,12 +4,14 @@
   align-items: flex-start;
   padding: 29px 30px 22px 34px;
   gap: 10px;
+  text-align: start;
 
   position: absolute;
   width: 72rem;
-  height: 65rem;
+  height: 49rem;
   left: 23rem;
   top: 8rem;
+  overflow-y: scroll;
 
   /* gray/white */
 

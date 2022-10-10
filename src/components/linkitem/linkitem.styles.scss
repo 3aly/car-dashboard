@@ -2,7 +2,9 @@
   display: flex;
   flex-direction: row;
 
-  a {
+  .navlink {
+    text-decoration: none;
+    color: #5f6165;
     margin-left: 3%;
     text-decoration: none;
     padding: 0% 2%;

@@ -4,7 +4,7 @@
   align-items: flex-start;
   gap: 10%;
 
-  width: 25rem;
+  width: 20rem;
   height: 5rem;
   margin: 1%;
   .holder {
@@ -14,7 +14,7 @@
     padding: 0.2rem 0.9rem;
     gap: 10px;
 
-    width: 590px;
+    width: 150%;
     height: 48px;
 
     border: 1px solid #e9eaec;
@@ -23,7 +23,7 @@
     /* gray/dark 2 */
   }
   .bigholder {
-    width: 76.5rem;
+    width: 323%;
     height: 48px;
     display: flex;
     flex-direction: row;

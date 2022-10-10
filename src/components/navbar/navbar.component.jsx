@@ -26,7 +26,6 @@ export const NavBar = (props) => {
           style={{ backgroundImage: `url(${profile})`, resizeMode: "cover" }}
         ></div>
       </div>
-      <Outlet />
     </div>
   );
 };
