@@ -1,15 +1,43 @@
-.cardcard {
-  display: flex;
-  flex-direction: column;
+#dark {
+  .cardcard {
+    display: flex;
+    flex-direction: column;
 
-  align-items: center;
-  padding: 24px;
-  gap: 10px;
-  height: fit-content;
-  background: #ffffff;
-  border-radius: 16px;
-  p {
-    color: #242731;
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+    height: fit-content;
+    background: #242731;
+    border-radius: 16px;
+    p {
+      color: white;
+    }
+    color: #72767c;
+
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s;
+    }
   }
-  color: #72767c;
+}
+#light {
+  .cardcard {
+    &:hover {
+      transform: scale(1.05);
+      transition: all 0.5s;
+    }
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    padding: 24px;
+    gap: 10px;
+    height: fit-content;
+    background: #ffffff;
+    border-radius: 16px;
+    p {
+      color: #242731;
+    }
+    color: #72767c;
+  }
 }

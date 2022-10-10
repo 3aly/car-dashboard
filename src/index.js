@@ -1,19 +1,20 @@
-import React from "react";
+import React, { createContext } from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
 import { UserProvider } from "./context/user.context";
+import { ThemeProvider } from "./context/theme.contex";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <UserProvider>
+    <ThemeProvider>
+      <BrowserRouter>
         <App />
-      </UserProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

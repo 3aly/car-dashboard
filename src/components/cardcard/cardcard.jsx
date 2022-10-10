@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useContext } from "react";
 import like from "../../Icons/like.png";
 import trans from "../../Icons/trans.png";
 import pass from "../../Icons/pass.png";
 import "./cardcard.scss";
+import { ThemeContex } from "../../context/theme.contex";
 
 export const CarCard = ({
   name,
@@ -12,8 +13,10 @@ export const CarCard = ({
   transmition,
   price,
 }) => {
+  const { theme } = useContext(ThemeContex);
+
   return (
-    <div className="cardcard">
+    <div className="cardcard" id={theme}>
       <div className="container justify-content-between m-0 p-0">
         <p className="m-0">{name}</p>
 

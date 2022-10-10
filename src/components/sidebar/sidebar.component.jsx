@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import LinkItem from "../linkitem/linkitem.component";
 import dashboard from "../../Icons/dashboard-icon.png";
 import assets from "../../Icons/Doughnut/Line.png";
@@ -14,8 +14,11 @@ import logout from "../../Icons/Sign Out/Line.png";
 
 import "./sidebar.styles.scss";
 import { Outlet } from "react-router-dom";
+import { ThemeContex } from "../../context/theme.contex";
 
 export const SideBar = () => {
+  const { theme, toggleTheme } = useContext(ThemeContex);
+
   return (
     <div className="sidebar-container">
       <div className="title">
@@ -85,7 +88,7 @@ export const SideBar = () => {
         ></LinkItem>
         <LinkItem
           imageurl={logout}
-          to={"logout"}
+          to={"signin"}
           label={"Logout"}
           className="navlink"
         ></LinkItem>

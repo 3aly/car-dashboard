@@ -1,7 +1,6 @@
 import "./App.css";
 import { SignUp } from "./pages/singup/singup";
 import { SignIn } from "./pages/singin/singin";
-
 import {
   BrowserRouter,
   Switch,
@@ -14,9 +13,13 @@ import { Home } from "./pages/home/home.component";
 import { NavSystem } from "./pages/navigation system/navsystem";
 import { Booking } from "./pages/booking/booking";
 import { Assets } from "./pages/assets/assets";
+import { createContext, useContext, useState } from "react";
+import { ThemeContex } from "./context/theme.contex";
+
 function App() {
+  const { theme } = useContext(ThemeContex);
   return (
-    <div className="App">
+    <div className="App" id={theme}>
       <Routes>
         <Route path="signin" element={<SignIn />} />
         <Route path="signup" element={<SignUp />} />

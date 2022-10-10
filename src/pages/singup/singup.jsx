@@ -12,6 +12,9 @@ import {
   signInWithGooglePopup,
   signinAuthUserWithEmailAndPassword,
 } from "../../utils/firebase/firebase.utils";
+import { ThemeContex } from "../../context/theme.contex";
+
+import Switch from "react-switch";
 
 const defultFormField = {
   firstName: "",
@@ -22,6 +25,8 @@ const defultFormField = {
 };
 
 export const SignUp = () => {
+  const { theme, toggleTheme } = useContext(ThemeContex);
+
   const signInWithGoogle = async () => {
     await signInWithGooglePopup();
   };
@@ -66,78 +71,79 @@ export const SignUp = () => {
     }
   };
   return (
-    <div className="sign-up-container ">
-      <div className="row title">
-        <h1>Get started</h1>
-        <p>
-          Dont have an account?
-          <Link to="/signin"> Sign in</Link>
-        </p>
-      </div>
+    <div className="main">
+      <div className="sign-up-container ">
+        <div className="row title">
+          <h1>Get started</h1>
+          <p>
+            Dont have an account?
+            <Link to="/signin"> Sign in</Link>
+          </p>
+        </div>
 
-      <div className="buttons-container">
-        <Button
-          buttonType={"google"}
-          imageurl={googlelogo}
-          onClick={signInWithGoogle}
+        <div className="buttons-container">
+          <Button
+            buttonType={"google"}
+            imageurl={googlelogo}
+            onClick={signInWithGoogle}
+          >
+            Sign Up with Google
+          </Button>
+
+          <Button buttonType={"facebook"} imageurl={facebooklogo}>
+            Sign Up with Facebook
+          </Button>
+        </div>
+
+        <div className="separator">
+          <div></div>or<div></div>
+        </div>
+        <form
+          className="form-container"
+          onSubmit={handleSubmit}
+          onChange={console.log(formFields)}
         >
-          Sign Up with Google
-        </Button>
-
-        <Button buttonType={"facebook"} imageurl={facebooklogo}>
-          Sign Up with Facebook
-        </Button>
-      </div>
-
-      <div className="separator">
-        <div></div>or<div></div>
-      </div>
-      <form
-        className="form-container"
-        onSubmit={handleSubmit}
-        onChange={console.log(formFields)}
-      >
-        <FormInput
-          label="First Name"
-          type="text"
-          required
-          onChange={handleChange}
-          name="firstName"
-          value={firstName}
-        />
-        <FormInput
-          label="Last Name"
-          type="text"
-          required
-          onChange={handleChange}
-          name="lastName"
-          value={lastName}
-        />
-        <FormInput
-          label="Email"
-          type="email"
-          required
-          onChange={handleChange}
-          name="email"
-          value={email}
-        />
-        <FormInput
-          label="Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="password"
-          value={password}
-        />
-        <FormInput
-          label="Confirm Password"
-          type="password"
-          required
-          onChange={handleChange}
-          name="confirmPassword"
-          value={confirmPassword}
-        />
-
+          <FormInput
+            label="First Name"
+            type="text"
+            required
+            onChange={handleChange}
+            name="firstName"
+            value={firstName}
+          />
+          <FormInput
+            label="Last Name"
+            type="text"
+            required
+            onChange={handleChange}
+            name="lastName"
+            value={lastName}
+          />
+          <FormInput
+            label="Email"
+            type="email"
+            required
+            onChange={handleChange}
+            name="email"
+            value={email}
+          />
+          <FormInput
+            label="Password"
+            type="password"
+            required
+            onChange={handleChange}
+            name="password"
+            value={password}
+          />
+          <FormInput
+            label="Confirm Password"
+            type="password"
+            required
+            onChange={handleChange}
+            name="confirmPassword"
+            value={confirmPassword}
+          />
+        </form>
         <div className="below-form">
           <div className="row justify-content-between m-2">
             <div className="col-4">
@@ -159,7 +165,9 @@ export const SignUp = () => {
             Sign Up
           </Button>
         </div>
-      </form>
+        <Switch onChange={toggleTheme} checked={theme == "dark"} />
+        <label className="m-2">{theme} Mode</label>
+      </div>
     </div>
   );
 };

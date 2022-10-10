@@ -1,24 +1,58 @@
-.tab {
-  padding: 3% 2%;
-  margin-right: 2%;
-  font-weight: 1000;
-  font-size: 18px;
-  vertical-align: middle;
-  cursor: pointer;
-  &:hover {
-    background: rgba(161, 98, 247, 0.1);
+#dark {
+  .tab {
+    padding: 3% 2%;
+    margin-right: 2%;
+    font-weight: 1000;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover {
+      background: rgba(161, 98, 247, 0.1);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+  }
+  .active {
     border-radius: 4px;
-    transition: all 0.2s;
+
+    background: #292e3d;
+    border-radius: 4px;
+    width: 70%;
+    padding: 0% 2%;
+    text-align: start;
+
+    /* primary/dark 1 */
+
+    color: white;
   }
 }
-.active {
-  background: rgba(161, 98, 247, 0.1);
-  border-radius: 4px;
 
-  background: rgba(161, 98, 247, 0.1);
-  border-radius: 4px;
+#light {
+  .tab {
+    padding: 3% 2%;
+    margin-right: 2%;
+    font-weight: 1000;
+    font-size: 18px;
+    vertical-align: middle;
+    cursor: pointer;
+    &:hover {
+      background: rgba(161, 98, 247, 0.1);
+      border-radius: 4px;
+      transition: all 0.2s;
+    }
+  }
+  .active {
+    background: rgba(161, 98, 247, 0.1);
+    border-radius: 4px;
 
-  /* primary/dark 1 */
+    background: rgba(161, 98, 247, 0.1);
+    border-radius: 4px;
+    width: 70%;
+    padding: 0% 2%;
+    text-align: start;
 
-  color: #242731;
+    /* primary/dark 1 */
+
+    color: #242731;
+  }
 }

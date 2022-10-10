@@ -9,9 +9,10 @@ body {
   font-size: 16px;
   line-height: 21px;
   display: flex;
-  justify-content: center;
-  background-color: #f5f4f6;
   word-spacing: 0%;
+  justify-content: center;
+  background: #f5f5f5;
+  overflow: hidden;
 }
 
 code {

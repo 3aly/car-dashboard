@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import car1 from "../../Icons/cars/2014-mercedes-benz-m-class-2012-mercedes-benz-m-class-2008-mercedes-benz-m-class-sport-utility-vehicle-mercedes-car-png-image-8230b0372dd015bcf5312eb17e2751ee.png";
 import car2 from "../../Icons/cars/car-audi-a3-audi-a4-car-3822c2bc08e2c2bce1d8ead0e70c7ddb.png";
 import car3 from "../../Icons/cars/maruti-suzuki-dzire-car-suzuki-ertiga-swift-dzire-f8a7d4ae19bd1c349dc080d9081ffd31.png";
@@ -6,7 +6,11 @@ import car4 from "../../Icons/cars/white car.png";
 import { CarCard } from "../../components/cardcard/cardcard";
 import "./booking.scss";
 import filter from "../../Icons/filter.png";
+
 import category from "../../Icons/category.png";
+import categorydark from "../../Icons/category-dark.png";
+
+import { ThemeContex } from "../../context/theme.contex";
 
 const cars = [
   {
@@ -90,6 +94,8 @@ const cars = [
 ];
 
 export const Booking = () => {
+  const { theme } = useContext(ThemeContex);
+
   const [search, setSearch] = useState("");
   const [filterdcars, setFilterdCars] = useState(cars);
   console.log(search);
@@ -104,7 +110,7 @@ export const Booking = () => {
   return (
     <div className="booking">
       <h1>Booking</h1>
-      <div className="search-holder p-0 container justify-content-between m-0">
+      <div className="p-0 container  m-0 search-holder">
         <div className="d-flex">
           {" "}
           <div class="dropdown m-2">
@@ -231,9 +237,12 @@ export const Booking = () => {
             </ul>
           </div>
         </div>
-        <div>
+        <div className="d-flex align-items-center">
+          <img
+            className="mt-1"
+            src={theme === "dark" ? categorydark : category}
+          />
           <img src={filter} />
-          <img src={category} />
         </div>
       </div>
       <div className="cars-contianer">

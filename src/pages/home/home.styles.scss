@@ -1,53 +1,117 @@
-.home-container {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 29px 30px 22px 34px;
-  gap: 10px;
-  text-align: start;
-
-  position: absolute;
-  width: 72rem;
-  height: 49rem;
-  left: 23rem;
-  top: 8rem;
-  overflow-y: scroll;
-
-  /* gray/white */
-
-  background: #ffffff;
-
-  .tabs-container {
-    display: flex;
-    flex-direction: row;
-    margin: 3% 0;
-  }
-
-  .infos-holder {
-    display: flex;
-    gap: 20%;
-    flex-wrap: wrap;
-  }
-  .separator {
-    width: 1050px;
-    height: 1px;
-
-    background: #e9eaec;
-  }
-  .profile-container {
-    gap: 1%;
-    display: flex;
-
-    margin: 3%;
-    width: 60rem;
-    justify-content: space-between;
-
-    span {
-      margin: 15%;
-    }
-    .de7k {
+#dark {
+  .main {
+    .home-container {
       display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 29px 30px 22px 34px;
+      gap: 10px;
+      text-align: start;
+
+      position: absolute;
+      width: 72rem;
+      height: 49rem;
+      left: 23rem;
+      top: 8rem;
+      overflow-y: scroll;
+
+      /* gray/white */
+      background: #242731;
+      color: white;
+
+      .tabs-container {
+        display: flex;
+        flex-direction: row;
+        margin: 3% 0;
+      }
+
+      .infos-holder {
+        display: flex;
+        gap: 20%;
+        flex-wrap: wrap;
+        InfoPiece {
+          border-color: #003cff;
+        }
+      }
+      .separator {
+        width: 1050px;
+        height: 3px;
+
+        background: #323745;
+      }
+      .profile-container {
+        gap: 1%;
+        display: flex;
+
+        margin: 3%;
+        width: 60rem;
+        justify-content: space-between;
+
+        span {
+          margin: 15%;
+        }
+        .de7k {
+          display: flex;
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+}
+
+#light {
+  background-color: white;
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 29px 30px 22px 34px;
+    gap: 10px;
+    text-align: start;
+
+    position: absolute;
+    width: 72rem;
+    height: 49rem;
+    left: 23rem;
+    top: 8rem;
+    overflow-y: scroll;
+
+    /* gray/white */
+
+    background: #ffffff;
+
+    .tabs-container {
+      display: flex;
+      flex-direction: row;
+      margin: 3% 0;
+    }
+
+    .infos-holder {
+      display: flex;
+      gap: 20%;
       flex-wrap: wrap;
+    }
+    .separator {
+      width: 1050px;
+      height: 1px;
+
+      background: #e9eaec;
+    }
+    .profile-container {
+      gap: 1%;
+      display: flex;
+
+      margin: 3%;
+      width: 60rem;
+      justify-content: space-between;
+
+      span {
+        margin: 15%;
+      }
+      .de7k {
+        display: flex;
+        flex-wrap: wrap;
+      }
     }
   }
 }
