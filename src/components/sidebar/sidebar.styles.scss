@@ -1,18 +1,19 @@
 #dark {
   .sidebar-container {
     position: absolute;
-    width: 20rem;
+    width: 20%;
     height: 100%;
     left: 0px;
     top: 0px;
     display: flex;
+    font-size: 0.8em;
     flex-direction: column;
     h3 {
       color: white;
     }
 
     background: #242731;
-    padding: 30px 24px;
+    padding: 2% 2%;
     gap: 10px;
     .links-container {
       display: flex;
@@ -41,16 +42,17 @@
 #light {
   .sidebar-container {
     position: absolute;
-    width: 20rem;
+    width: 20%;
     height: 100%;
     left: 0px;
     top: 0px;
     display: flex;
+    font-size: 0.8em;
     flex-direction: column;
 
     background-color: white;
 
-    padding: 30px 24px;
+    padding: 2% 2%;
     gap: 10px;
     .links-container {
       display: flex;

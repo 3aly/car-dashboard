@@ -71,7 +71,7 @@ export const SignUp = () => {
     }
   };
   return (
-    <div className="main">
+    <div className="main" id={theme}>
       <div className="sign-up-container ">
         <div className="row title">
           <h1>Get started</h1>

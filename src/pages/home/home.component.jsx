@@ -32,7 +32,7 @@ export const Home = () => {
   return (
     <div className="main">
       <div className="home-container" id={theme}>
-        <h1>Settings</h1>
+        <h3>Settings</h3>
         <div className="tabs-container">
           {tabs.map((tab) => (
             <TabsContainer tab={tab} />
@@ -50,7 +50,7 @@ export const Home = () => {
             content={user.where.address}
             icon={home}
           />
-          <div className="container m-1 p-0">
+          <div className="container m-0 p-0">
             {" "}
             <InfoPiece
               title={"Email"}
@@ -65,17 +65,20 @@ export const Home = () => {
           <InfoPiece title={"Gender"} content={user.gender} icon={male} />
         </div>
         <div className="separator"></div>
-        <div className="profile-container mx-0">
+        <div className="profile-container mx-0 ">
           <div className="de7k">
             {" "}
             <div className="me-5">
               <h4>Your photo</h4>
               <p>This will be displayed on your profile.</p>
             </div>
-            <img src={profilepic} className="img-fluid rounded-circle"></img>
+            <div c>
+              {" "}
+              <img src={profilepic} className="img-fluid rounded-circle"></img>
+            </div>
           </div>
 
-          <div className="align-self-center">
+          <div className="">
             <span>Delete</span>
 
             <span style={{ color: "#b889f9" }}>Update</span>
@@ -83,8 +86,8 @@ export const Home = () => {
         </div>
         <div className="separator"></div>
         <div className="d-flex align-items-start">
-          <h6 className="mt-4">Social Profiles</h6>
-          <div className="col offset-4">
+          <h6>Social Profiles</h6>
+          <div className="col offset-8">
             <InfoPiece content={"facebook.com"} />
             <InfoPiece content={"twitter.com/"} />
           </div>

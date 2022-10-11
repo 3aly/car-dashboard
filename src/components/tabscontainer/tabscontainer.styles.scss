@@ -6,6 +6,7 @@
     font-size: 18px;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 0.8em;
     &:hover {
       background: rgba(161, 98, 247, 0.1);
       border-radius: 4px;
@@ -35,6 +36,7 @@
     font-size: 18px;
     vertical-align: middle;
     cursor: pointer;
+    font-size: 0.8em;
     &:hover {
       background: rgba(161, 98, 247, 0.1);
       border-radius: 4px;
@@ -42,10 +44,9 @@
     }
   }
   .active {
-    background: rgba(161, 98, 247, 0.1);
     border-radius: 4px;
-
     background: rgba(161, 98, 247, 0.1);
+
     border-radius: 4px;
     width: 70%;
     padding: 0% 2%;
@@ -53,6 +54,6 @@
 
     /* primary/dark 1 */
 
-    color: #242731;
+    color: black;
   }
 }
