@@ -4,17 +4,20 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { UserProvider } from "./context/user.context";
+import { UserProvider } from "./context/cars.context";
 import { ThemeProvider } from "./context/theme.contex";
+import { LikeProvider } from "./context/like.context.jsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <ThemeProvider>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </ThemeProvider>
+    <BrowserRouter>
+      <ThemeProvider>
+        <LikeProvider>
+          <App />
+        </LikeProvider>
+      </ThemeProvider>
+    </BrowserRouter>
   </React.StrictMode>
 );
 
