@@ -1,0 +1,42 @@
+.sensoritem {
+  display: flex;
+  margin: 10% 2%;
+  font-size: 90%;
+
+  justify-content: space-evenly;
+
+  span {
+    width: 100%;
+  }
+
+  align-items: center;
+  .check {
+    -webkit-appearance: none; /*hides the default checkbox*/
+    width: 9%;
+    height: inherit;
+    transition: 0.1s;
+    background-color: #ffffff;
+    text-align: center;
+    font-weight: 600;
+    color: white;
+    border-radius: 3px;
+    outline: none;
+    margin: 0%2%;
+  }
+
+  .check:checked {
+    background: #ff6370;
+  }
+
+  .check:before {
+    content: "✖";
+  }
+  .check:checked:before {
+    content: "✔";
+  }
+
+  .check:hover {
+    cursor: pointer;
+    opacity: 0.8;
+  }
+}

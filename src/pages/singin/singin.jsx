@@ -11,7 +11,7 @@ export const SignIn = () => {
   const { theme, toggleTheme } = useContext(ThemeContex);
 
   return (
-    <div className="main">
+    <Fragment>
       <div className="sign-in-container" id={theme}>
         <div className="row title">
           <h1>Get started</h1>
@@ -38,7 +38,7 @@ export const SignIn = () => {
         </form>
         <div className="below-form">
           <div className="row justify-content-between m-2">
-            <div className="col-4">
+            <div className="col-6">
               <input
                 class="form-check-input mx-3 "
                 type="checkbox"
@@ -58,6 +58,6 @@ export const SignIn = () => {
         <Switch onChange={toggleTheme} checked={theme == "dark"} />
         <label className="m-2">{theme} Mode</label>
       </div>
-    </div>
+    </Fragment>
   );
 };

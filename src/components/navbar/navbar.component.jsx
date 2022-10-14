@@ -11,7 +11,7 @@ export const NavBar = (props) => {
   const { theme, toggleTheme } = useContext(ThemeContex);
 
   return (
-    <div className="nav-container" id="">
+    <div className="nav-container" id={theme}>
       <div className="search-container">
         {" "}
         <input
@@ -30,10 +30,9 @@ export const NavBar = (props) => {
           {" "}
           <img src={notify}></img>
         </div>
-        <div
-          className="profile-pic"
-          style={{ backgroundImage: `url(${profile})`, resizeMode: "cover" }}
-        ></div>
+        <div className="profile-pic">
+          <img className="img-fluid" src={profile} />
+        </div>
       </div>
     </div>
   );

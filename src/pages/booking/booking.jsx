@@ -11,101 +11,31 @@ import category from "../../Icons/category.png";
 import categorydark from "../../Icons/category-dark.png";
 
 import { ThemeContex } from "../../context/theme.contex";
-
-const cars = [
-  {
-    name: "Porshe 718 Cayman S Used",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car1,
-    state: "used",
-  },
-  {
-    name: "Audi A3 New",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car2,
-    state: "new",
-  },
-  {
-    name: "Audi A4 Used",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car3,
-    state: "used",
-  },
-  {
-    name: "Suzuki Dzire New",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car4,
-    state: "new",
-  },
-  {
-    name: "Suzuki Swift Used",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car2,
-    state: "used",
-  },
-  {
-    name: "Mercedes Benz M-class New",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car4,
-  },
-  {
-    name: "BMW x6 New",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car2,
-  },
-  {
-    name: "BMW x2 Nsed",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car1,
-    state: "used",
-  },
-  {
-    name: "BMW x5 Used",
-    type: "Coupe",
-    passnegers: "4",
-    transmition: "Manual",
-    pice: "$400/d",
-    image: car3,
-  },
-];
+import { LikeContex } from "../../context/like.context";
+import { CarsContex } from "../../context/cars.context";
 
 export const Booking = () => {
   const { theme } = useContext(ThemeContex);
-
+  const { like } = useContext(LikeContex);
   const [search, setSearch] = useState("");
-  const [filterdcars, setFilterdCars] = useState(cars);
-  console.log(search);
+  const { carr, setCarr } = useContext(CarsContex);
+  const [filterdcars, setFilterdCars] = useState(carr);
+
+  const filterFav = () => {
+    const newfilterd = carr.filter((car) => {
+      return car.fav === true;
+    });
+    setFilterdCars(newfilterd);
+  };
 
   useEffect(() => {
-    const newfilterd = cars.filter((car) => {
+    const newfilterd = carr.filter((car) => {
       return car.name.includes(search);
     });
     setFilterdCars(newfilterd);
-  }, [search]);
+  }, [search, carr]);
+
+  console.log(carr);
 
   return (
     <div className="booking">
@@ -160,6 +90,11 @@ export const Booking = () => {
                   value="Used"
                 >
                   Used
+                </option>
+              </li>
+              <li>
+                <option class="dropdown-item" onClick={filterFav}>
+                  Favorite
                 </option>
               </li>
             </ul>
@@ -247,14 +182,18 @@ export const Booking = () => {
       </div>
       <div className="cars-contianer">
         {filterdcars.map((car) => (
-          <CarCard
-            name={car.name}
-            image={car.image}
-            type={car.type}
-            transmition={car.transmition}
-            price={car.pice}
-            passnegers={car.passnegers}
-          />
+          <div>
+            <CarCard
+              name={car.name}
+              image={car.image}
+              type={car.type}
+              transmition={car.transmition}
+              price={car.pice}
+              passnegers={car.passnegers}
+              fav={car.fav}
+              idd={car.id}
+            />
+          </div>
         ))}
       </div>
     </div>
