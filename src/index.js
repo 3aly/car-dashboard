@@ -4,18 +4,18 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { BrowserRouter } from "react-router-dom";
-import { UserProvider } from "./context/cars.context";
 import { ThemeProvider } from "./context/theme.contex";
 import { LikeProvider } from "./context/like.context.jsx";
+import { CarsProvider } from "./context/cars.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <ThemeProvider>
-        <LikeProvider>
+        <CarsProvider>
           <App />
-        </LikeProvider>
+        </CarsProvider>
       </ThemeProvider>
     </BrowserRouter>
   </React.StrictMode>

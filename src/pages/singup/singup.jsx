@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useContext, Fragment } from "react";
 import { FormInput } from "../../components/form-input/form-input.component";
 import { Button } from "../../components/button/button.component";
 import "./singup.styles.scss";
@@ -71,30 +71,24 @@ export const SignUp = () => {
     }
   };
   return (
-    <div className="main" id={theme}>
-      <div className="sign-up-container ">
+    <Fragment>
+      <div className="sign-in-container" id={theme}>
         <div className="row title">
           <h1>Get started</h1>
           <p>
             Dont have an account?
-            <Link to="/signin"> Sign in</Link>
+            <Link to="/signin"> Sign In</Link>
           </p>
         </div>
-
         <div className="buttons-container">
-          <Button
-            buttonType={"google"}
-            imageurl={googlelogo}
-            onClick={signInWithGoogle}
-          >
-            Sign Up with Google
+          <Button buttonType={"google"} imageurl={googlelogo}>
+            Sign in with Google
           </Button>
 
           <Button buttonType={"facebook"} imageurl={facebooklogo}>
-            Sign Up with Facebook
+            Sign in with Facebook
           </Button>
         </div>
-
         <div className="separator">
           <div></div>or<div></div>
         </div>
@@ -146,14 +140,14 @@ export const SignUp = () => {
         </form>
         <div className="below-form">
           <div className="row justify-content-between m-2">
-            <div className="col-4">
+            <div className="col-6">
               <input
-                className="mx-2"
+                class="form-check-input mx-3 "
                 type="checkbox"
-                id="remember"
-                name="vehicle1"
-                value="Bike"
-              ></input>
+                value=""
+                id="flexCheckDefault"
+              />
+
               <label for="remember">Remember me</label>
             </div>
             <div className="col-6 text-end">
@@ -161,13 +155,11 @@ export const SignUp = () => {
             </div>
           </div>
 
-          <Button buttonType={"inverted"} type="sumbit">
-            Sign Up
-          </Button>
+          <Button buttonType={"inverted"}>Sign in</Button>
         </div>
         <Switch onChange={toggleTheme} checked={theme == "dark"} />
         <label className="m-2">{theme} Mode</label>
       </div>
-    </div>
+    </Fragment>
   );
 };

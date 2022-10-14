@@ -30,67 +30,65 @@ export const Home = () => {
   const { theme } = useContext(ThemeContex);
 
   return (
-    <div className="main">
-      <div className="home-container" id={theme}>
-        <h3>Settings</h3>
-        <div className="tabs-container">
-          {tabs.map((tab) => (
-            <TabsContainer tab={tab} />
-          ))}
-        </div>
-        <div>
-          <h3>Profile</h3>
-          <p>Update your photo and personal details here.</p>
-        </div>
-        <div className="separator"></div>
-        <div className="infos-holder">
-          <InfoPiece title={"Live in"} content={user.where.live} icon={home} />
+    <div className="home-container" id={theme}>
+      <h3>Settings</h3>
+      <div className="tabs-container">
+        {tabs.map((tab) => (
+          <TabsContainer tab={tab} />
+        ))}
+      </div>
+      <div>
+        <h3>Profile</h3>
+        <p>Update your photo and personal details here.</p>
+      </div>
+      <div className="separator"></div>
+      <div className="infos-holder">
+        <InfoPiece title={"Live in"} content={user.where.live} icon={home} />
+        <InfoPiece
+          title={"Street Address"}
+          content={user.where.address}
+          icon={home}
+        />
+        <div className="container m-0 p-0">
+          {" "}
           <InfoPiece
-            title={"Street Address"}
-            content={user.where.address}
-            icon={home}
+            title={"Email"}
+            content={user.email.eml}
+            icon={email}
+            big={true}
           />
-          <div className="container m-0 p-0">
-            {" "}
-            <InfoPiece
-              title={"Email"}
-              content={user.email.eml}
-              icon={email}
-              big={true}
-            />
-          </div>
-
-          <InfoPiece title={"Date Of Birth"} content={user.dob} icon={dob} />
-
-          <InfoPiece title={"Gender"} content={user.gender} icon={male} />
         </div>
-        <div className="separator"></div>
-        <div className="profile-container mx-0 ">
-          <div className="de7k">
-            {" "}
-            <div className="me-5">
-              <h4>Your photo</h4>
-              <p>This will be displayed on your profile.</p>
-            </div>
-            <div c>
-              {" "}
-              <img src={profilepic} className="img-fluid rounded-circle"></img>
-            </div>
+
+        <InfoPiece title={"Date Of Birth"} content={user.dob} icon={dob} />
+
+        <InfoPiece title={"Gender"} content={user.gender} icon={male} />
+      </div>
+      <div className="separator"></div>
+      <div className="profile-container mx-0 ">
+        <div className="de7k">
+          {" "}
+          <div className="me-5">
+            <h4>Your photo</h4>
+            <p>This will be displayed on your profile.</p>
           </div>
-
-          <div className="">
-            <span>Delete</span>
-
-            <span style={{ color: "#b889f9" }}>Update</span>
+          <div c>
+            {" "}
+            <img src={profilepic} className="img-fluid rounded-circle"></img>
           </div>
         </div>
-        <div className="separator"></div>
-        <div className="d-flex align-items-start">
-          <h6>Social Profiles</h6>
-          <div className="col offset-8">
-            <InfoPiece content={"facebook.com"} />
-            <InfoPiece content={"twitter.com/"} />
-          </div>
+
+        <div className="">
+          <span>Delete</span>
+
+          <span style={{ color: "#b889f9" }}>Update</span>
+        </div>
+      </div>
+      <div className="separator"></div>
+      <div className="d-flex align-items-start">
+        <h6>Social Profiles</h6>
+        <div className="col offset-8">
+          <InfoPiece content={"facebook.com"} />
+          <InfoPiece content={"twitter.com/"} />
         </div>
       </div>
     </div>

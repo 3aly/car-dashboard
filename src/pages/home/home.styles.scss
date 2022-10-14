@@ -1,75 +1,147 @@
 #dark {
-  .main {
-    .home-container {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    gap: 2%;
+    text-align: start;
+    overflow-y: scroll;
+    h3 {
+      font-size: 1.52rem;
+      margin: 0%;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    left: 17%;
+    top: 13%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    /* gray/white */
+    background: #242731;
+    color: white;
+
+    .tabs-container {
       display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      padding: 2%;
-      gap: 10px;
-      text-align: start;
-      h3 {
-        font-size: 1.52rem;
-        margin: 0%;
+      flex-direction: row;
+      margin: 3% 0;
+    }
+
+    .infos-holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: fit-content;
+      margin: 1% 0%;
+
+      InfoPiece {
+        border-color: #003cff;
       }
-      p {
-        font-size: 0.8rem;
+    }
+    .separator {
+      width: 80%;
+      height: 0.2%;
+
+      background: #323745;
+    }
+    .profile-container {
+      gap: 1%;
+      display: flex;
+
+      margin: 0%;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20%;
+
+      span {
+        margin: 15%;
       }
-
-      position: absolute;
-      width: 70%;
-      height: 29rem;
-      left: 22%;
-      top: 6rem;
-      overflow-x: hidden;
-      overflow-y: scroll;
-
-      /* gray/white */
-      background: #242731;
-      color: white;
-
-      .tabs-container {
+      .de7k {
         display: flex;
-        flex-direction: row;
-        margin: 3% 0;
-      }
-
-      .infos-holder {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: flex-start;
-        width: fit-content;
-        InfoPiece {
-          border-color: #003cff;
-        }
-      }
-      .separator {
-        width: 1050px;
-        height: 3px;
-
-        background: #323745;
-      }
-      .profile-container {
-        gap: 1%;
-        display: flex;
-
-        margin: 0%;
-        justify-content: space-between;
+        flex-wrap: nowrap;
         align-items: center;
-        gap: 20%;
-
-        span {
-          margin: 15%;
-        }
-        .de7k {
-          display: flex;
-          flex-wrap: nowrap;
-          align-items: center;
-        }
       }
     }
   }
 }
 #light {
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2%;
+    gap: 2%;
+    text-align: start;
+    overflow-y: scroll;
+    h3 {
+      font-size: 1.52rem;
+      margin: 0%;
+    }
+    p {
+      font-size: 0.8rem;
+    }
+
+    position: absolute;
+    width: 70%;
+    height: 85%;
+    left: 17%;
+    top: 13%;
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+    /* gray/white */
+    background: #ffffff;
+    color: black;
+
+    .tabs-container {
+      display: flex;
+      flex-direction: row;
+      margin: 3% 0;
+    }
+
+    .infos-holder {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: flex-start;
+      width: fit-content;
+      margin: 1% 0%;
+      InfoPiece {
+        border-color: #003cff;
+      }
+    }
+    .separator {
+      width: 80%;
+      height: 0.2%;
+
+      background: #e9eaec;
+    }
+    .profile-container {
+      gap: 1%;
+      display: flex;
+
+      margin: 0%;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20%;
+
+      span {
+        margin: 15%;
+      }
+      .de7k {
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+      }
+    }
+  }
+}
+#liasdsaght {
   .main {
     .home-container {
       display: flex;

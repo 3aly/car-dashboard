@@ -14,7 +14,7 @@ export const Button = ({ children, buttonType, imageurl, ...otherProps }) => {
         {...otherProps}
       >
         <img src={imageurl} />
-        {children}
+        <span className="mx-2">{children}</span>
       </button>
     </Fragment>
   );
