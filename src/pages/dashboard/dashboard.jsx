@@ -24,27 +24,36 @@ export const DashBoard = () => {
           icon={energy}
           title={"Energy"}
           content={"45%"}
-          type={"energy"}
+          bgcolor={"energy"}
+          datatype={"energy"}
         />
-        <ChartCard icon={range} title={"Range"} content={"15%"} type={"rest"} />{" "}
+        <ChartCard
+          icon={range}
+          title={"Range"}
+          content={"15%"}
+          bgcolor={"rest"}
+          datatype={"range"}
+        />{" "}
         <ChartCard
           icon={fluid}
           title={"Break fluid"}
           content={"9%"}
-          type={"rest"}
+          bgcolor={"rest"}
+          datatype={"fluid"}
         />{" "}
         <ChartCard
           icon={tire}
           title={"Tire Wear"}
           content={"25%"}
-          type={"rest"}
+          bgcolor={"rest"}
+          datatype={"tire"}
         />
       </div>
       <div className="middle">
         <div className="milesstats">
           <h4>Miles Statistics</h4>
           <div className=" d-flex justify-content-between">
-            <div className="d-flex justify-content-around align-items-center">
+            <div className="d-flex justify-content-around align-items-center my-1">
               <div
                 className="rounded-pill py-0 px-2 "
                 style={{ backgroundColor: "#2884FF" }}
@@ -66,7 +75,7 @@ export const DashBoard = () => {
             <div className="contaienr">
               <p>20 February 2022</p>
             </div>
-            <div className=" d-flex justify-content-around align-items-center">
+            <div className=" d-flex justify-content-around align-items-center my-1">
               <div
                 className="rounded-pill py-0 px-2"
                 style={{ backgroundColor: " #FF764C" }}

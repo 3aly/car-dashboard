@@ -40,6 +40,17 @@ const labels = [
   "12/9",
 ];
 
+const Options = {
+  plugins: {
+    tooltip: {
+      enabled: false,
+    },
+    legend: { display: false },
+  },
+  responsive: true,
+  maintainAspectRatio: true,
+};
+
 export const data = {
   labels,
   datasets: [
@@ -47,13 +58,10 @@ export const data = {
       type: "line",
       label: "Activity",
       backgroundColor: "#8668E1",
-      borderColor: "#f4ecfe",
-      borderWidth: 2,
+      borderColor: "#967ce5",
       fill: true,
-      data: [
-        100, 200, 300, 200, 300, 400, 200, 300, 100, 200, 300, 300, 200, 300,
-        100,
-      ],
+      data: [100, 400, 300, 200, 200, 200, 200, 300, 200, 200, 300, 300, 100],
+      tension: 0.5,
     },
     {
       type: "bar",
@@ -63,8 +71,9 @@ export const data = {
         1, 2, 3, 4, 0, 300, 0, 0, 1, 2, 3, 4, 6, 3, 1, 2, 3, 4, 6, 3, 1, 2, 3,
         4, 6, 3, 13, 21, 1, 2, 3, 4, 6, 3, 13, 21,
       ],
-      borderColor: "white",
-      borderWidth: 2,
+      borderColor: "#967ce5",
+      borderWidth: 0,
+      borderRadius: 5,
     },
   ],
   options: { respnsoive: true },
@@ -73,7 +82,8 @@ export const data = {
 const MUltiBarChart = () => {
   return (
     <div className="multibarchart">
-      <Chart type="bar" data={data} />
+      <h4>Activity</h4>
+      <Chart type="bar" data={data} options={Options} />
     </div>
   );
 };

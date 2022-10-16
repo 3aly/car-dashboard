@@ -31,21 +31,32 @@ export const data = {
   datasets: [
     {
       type: "line",
-      label: "Activity",
+      label: "",
       backgroundColor: "rgba(255, 118, 76, 0.29)",
       borderColor: "rgba(255, 118, 76, 0.29)",
 
-      fill: false,
-      data: [65, 59, 80, 81, 5, 59, 80, 8, 15, 59, 80, 81, 56, 55, 40],
+      fill: true,
+      data: [65, 67, 70, 71, 60, 55, 65],
+      tension: 0.5,
     },
   ],
-  options: { respnsoive: true },
+};
+
+const Options = {
+  plugins: {
+    tooltip: {
+      enabled: false,
+    },
+    legend: { display: false },
+  },
+  responsive: true,
+  maintainAspectRatio: true,
 };
 
 const CarsStats = () => {
   return (
     <div className="multibarchart">
-      <Chart type="bar" data={data} />
+      <Chart type="bar" data={data} options={Options} />
     </div>
   );
 };

@@ -18,7 +18,6 @@ export const Assets = () => {
 
   return (
     <div className="assets" id={theme}>
-      <span>Assets</span>
       <div className="container justify-content-center ">
         <div className="car-holder me-3">
           <div className="info-holder">
@@ -53,7 +52,7 @@ export const Assets = () => {
             <img src={car} />
           </div>
         </div>
-        <div>
+        <div className="left">
           <div className="chartholder">
             <MUltiBarChart />
           </div>
@@ -81,35 +80,39 @@ export const Assets = () => {
             </div>
           </div>
           <div className="reminder text-start">
-            <div className="row justify-content-between">
-              <div className="col-3">Reminder</div>
-              <div className="col-3">+ Add New</div>
+            <div className="row justify-content-between my-3">
+              <div className="col-3">
+                <h4>Reminder</h4>
+              </div>
+              <div className="col-3 m-0">
+                <button>+ Add New</button>
+              </div>
             </div>
             <div className="vertseparator"></div>
-            <div className="row">
-              <div className="col">Description</div>
-              <div className="col">Due</div>
-              <div className="col">Overdue</div>
-              <div className="col">Notify</div>
-              <div className="col">Status</div>
-            </div>
-            <div className="vertseparator"></div>
-
-            <div className="row">
-              <div className="col">Urgent Safety Recall</div>
-              <div className="col">06/04/2022</div>
-              <div className="col">08/04/2022</div>
-              <div className="col">David Demo</div>
-              <div className="col">Completed</div>
+            <div className="row my-2">
+              <div className="col-4">Description</div>
+              <div className="col-2">Due</div>
+              <div className="col-2">Overdue</div>
+              <div className="col-2">Notify</div>
+              <div className="col-2">Status</div>
             </div>
             <div className="vertseparator"></div>
 
-            <div className="row">
-              <div className="col">Urgent Safety Recall</div>
-              <div className="col">06/04/2022</div>
-              <div className="col">08/04/2022</div>
-              <div className="col">David Demo</div>
-              <div className="col">Completed</div>
+            <div className="row my-2 ">
+              <div className="col-4">Urgent Safety Recall</div>
+              <div className="col-2">06/04/2022</div>
+              <div className="col-2">08/04/2022</div>
+              <div className="col-2">Demo</div>
+              <div className="col-2">Completed</div>
+            </div>
+            <div className="vertseparator"></div>
+
+            <div className="row my-2">
+              <div className="col-4">Urgent Safety Recall</div>
+              <div className="col-2">06/04/2022</div>
+              <div className="col-2">08/04/2022</div>
+              <div className="col-2">Demo</div>
+              <div className="col-2">Completed</div>
             </div>
           </div>
         </div>
