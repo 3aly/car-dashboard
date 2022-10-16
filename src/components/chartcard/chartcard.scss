@@ -1,0 +1,39 @@
+#dark {
+  .chartcard {
+    width: 23%;
+
+    margin: 0% 1%;
+    border-radius: 14px;
+    padding: 2%;
+    justify-content: center;
+    color: white;
+  }
+
+  .energy {
+    background: #a162f7;
+  }
+
+  .rest {
+    background: #242731;
+  }
+}
+#light {
+  .chartcard {
+    width: 23%;
+
+    margin: 0% 1%;
+    border-radius: 14px;
+    padding: 2%;
+    justify-content: center;
+    color: white;
+  }
+
+  .energy {
+    background: #a162f7;
+  }
+
+  .rest {
+    background: #ffff;
+    color: black;
+  }
+}

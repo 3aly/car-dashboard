@@ -11,6 +11,7 @@ import {
   BarController,
 } from "chart.js";
 import { Chart } from "react-chartjs-2";
+import "./multibarchart.styles.scss";
 
 ChartJS.register(
   LinearScale,
@@ -66,10 +67,15 @@ export const data = {
       borderWidth: 2,
     },
   ],
+  options: { respnsoive: true },
 };
 
 const MUltiBarChart = () => {
-  return <Chart type="bar" data={data} />;
+  return (
+    <div className="multibarchart">
+      <Chart type="bar" data={data} />
+    </div>
+  );
 };
 
 export default MUltiBarChart;

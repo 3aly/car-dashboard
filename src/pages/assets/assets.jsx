@@ -12,7 +12,7 @@ import remidnerd from "../../Icons/remidnerd.png";
 import downarrow from "../../Icons/donwarrow.png";
 import SensorItem from "../../components/sensoritem/sensoritem.componen";
 import { ThemeContex } from "../../context/theme.contex";
-
+import MUltiBarChart from "../../components/multibarchart/multibarchart";
 export const Assets = () => {
   const { theme } = useContext(ThemeContex);
 
@@ -54,11 +54,8 @@ export const Assets = () => {
           </div>
         </div>
         <div>
-          <div>
-            <img
-              src={theme === "dark" ? activityd : activity}
-              className="fluid-img"
-            />
+          <div className="chartholder">
+            <MUltiBarChart />
           </div>
           <div className="container justify-content-between py-0 px-0 my-3 ">
             <img
@@ -82,7 +79,38 @@ export const Assets = () => {
               </div>
               <button>See All</button>
             </div>
-            <div></div>
+          </div>
+          <div className="reminder text-start">
+            <div className="row justify-content-between">
+              <div className="col-3">Reminder</div>
+              <div className="col-3">+ Add New</div>
+            </div>
+            <div className="vertseparator"></div>
+            <div className="row">
+              <div className="col">Description</div>
+              <div className="col">Due</div>
+              <div className="col">Overdue</div>
+              <div className="col">Notify</div>
+              <div className="col">Status</div>
+            </div>
+            <div className="vertseparator"></div>
+
+            <div className="row">
+              <div className="col">Urgent Safety Recall</div>
+              <div className="col">06/04/2022</div>
+              <div className="col">08/04/2022</div>
+              <div className="col">David Demo</div>
+              <div className="col">Completed</div>
+            </div>
+            <div className="vertseparator"></div>
+
+            <div className="row">
+              <div className="col">Urgent Safety Recall</div>
+              <div className="col">06/04/2022</div>
+              <div className="col">08/04/2022</div>
+              <div className="col">David Demo</div>
+              <div className="col">Completed</div>
+            </div>
           </div>
         </div>
       </div>

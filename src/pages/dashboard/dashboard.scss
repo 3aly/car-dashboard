@@ -1,0 +1,139 @@
+#dark {
+  .dashboard {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    overflow-y: scroll;
+    background: #1f2128;
+    .stats {
+      display: flex;
+      margin: 2% 0%;
+      justify-content: space-evenly;
+      min-height: 42%;
+    }
+    .middle {
+      h4 {
+        margin-bottom: 2%;
+      }
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 70%;
+        margin: 0% 4%;
+        color: #808191;
+      }
+      p {
+        font-size: 70%;
+        margin: 0%;
+        color: white;
+      }
+      .milesstats {
+        text-align: start;
+        color: white;
+        background: #242731;
+        border-radius: 14px;
+        padding: 2%;
+        margin: 0% 1%;
+        width: 50%;
+      }
+
+      .carstats {
+        text-align: start;
+        color: white;
+        background: #242731;
+        border-radius: 14px;
+        padding: 2%;
+        width: 50%;
+
+        margin: 0% 1%;
+      }
+    }
+
+    .cars {
+      display: flex;
+      flex-direction: row;
+      margin: 2% 0%;
+      justify-content: space-evenly;
+      img {
+        margin: 0% 2%;
+        width: 30%;
+      }
+    }
+  }
+}
+#light {
+  .dashboard {
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    display: flex;
+    padding: 2%;
+    flex-direction: column;
+    width: 60%;
+    height: 90%;
+    overflow-y: scroll;
+
+    .stats {
+      display: flex;
+      margin: 2% 0%;
+      justify-content: space-evenly;
+    }
+    .middle {
+      h4 {
+        margin-bottom: 2%;
+      }
+      display: flex;
+      justify-content: space-between;
+      span {
+        font-size: 70%;
+        margin: 0% 4%;
+        color: #808191;
+      }
+      p {
+        font-size: 70%;
+        margin: 0%;
+        color: black;
+      }
+
+      .day {
+        color: white;
+      }
+      .milesstats {
+        text-align: start;
+        color: black;
+        background: #ffff;
+        border-radius: 14px;
+        padding: 2%;
+        margin: 0% 1%;
+        width: 50%;
+      }
+
+      .carstats {
+        text-align: start;
+        color: black;
+        background: #ffff;
+        border-radius: 14px;
+        padding: 2%;
+        width: 50%;
+
+        margin: 0% 1%;
+      }
+    }
+
+    .cars {
+      display: flex;
+      flex-direction: row;
+      margin: 2% 0%;
+      justify-content: space-evenly;
+      img {
+        margin: 0% 2%;
+        width: 30%;
+      }
+    }
+  }
+}
