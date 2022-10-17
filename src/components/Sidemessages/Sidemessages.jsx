@@ -6,9 +6,8 @@ import ChatHeads from "../Chatheads/Chatheads";
 import "./Sidemessages.scss";
 
 export const SideMessages = ({ users }) => {
-  const { messages } = useContext(MessagesContex);
+  const { messages, onMessage } = useContext(MessagesContex);
 
-  console.log(users, "users");
   return (
     <div className="sidemessages">
       <div className="d-flex flex-row justify-content-between p-2">
@@ -28,12 +27,14 @@ export const SideMessages = ({ users }) => {
         ></input>
       </div>
       <div className="chatheads">
-        {messages.map((row) => {
+        {users.map((user) => {
           return (
             <ChatHeads
-              imgUrl={row.imgUrl}
-              title={row.user}
-              lastMessage={row.messages[row.messages.length - 1]}
+              imgUrl={user.imageUrl}
+              title={user.username}
+              lastMessage={messages.map((message) => {
+                if (message.username === user.username) return message.text;
+              })}
             />
           );
         })}

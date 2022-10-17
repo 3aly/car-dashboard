@@ -9,10 +9,9 @@ const ChatNav = ({ user }) => {
     <div className="chatnav">
       <div className="d-flex flex-row">
         {" "}
-        <img className="img-fluid  rounded-circle" src={user.imgUrl} />{" "}
+        <img className="img-fluid  rounded-circle" src={user.imageUrl} />{" "}
         <div className="text-start">
-          <h6>{user.user}</h6>
-          <span>{user.state}</span>
+          <h6>{user.username}</h6>
         </div>
       </div>
       <div>

@@ -1,5 +1,17 @@
-import user1 from "../Icons/user1.png";
-import user2 from "../Icons/user2.png";
+import user1 from "../../Icons/user1.png";
+import user2 from "../../Icons/user2.png";
+
+import user3 from "../../Icons/user3.png";
+
+import user4 from "../../Icons/user4.png";
+
+import user5 from "../../Icons/user5.png";
+
+import user6 from "../../Icons/user6.png";
+
+import user7 from "../../Icons/user7.png";
+
+import user8 from "../../Icons/user8.png";
 
 const chatData = [
   {
@@ -81,7 +93,7 @@ const chatData = [
       },
       {
         id: 5,
-        content: "Random Msg to Test my App",
+        content: "dasdasdsa",
         timeStamp: "7:50 PM",
         type: "sender",
       },
@@ -89,7 +101,7 @@ const chatData = [
   },
   {
     id: 3,
-    imageUrl: user1,
+    imageUrl: user3,
     contactName: "Desian Tam",
     isPinned: true,
     messages: [
@@ -123,7 +135,7 @@ const chatData = [
       },
       {
         id: 5,
-        content: "Random Msg to Test my App",
+        content: "dasdasdsa",
         timeStamp: "7:50 PM",
         type: "sender",
       },
@@ -131,7 +143,7 @@ const chatData = [
   },
   {
     id: 4,
-    imageUrl: user2,
+    imageUrl: user4,
     contactName: "Killan James",
     isPinned: true,
     messages: [
@@ -174,7 +186,7 @@ const chatData = [
   },
   {
     id: 5,
-    imageUrl: user1,
+    imageUrl: user5,
     contactName: "Desian Tam",
     isPinned: true,
     messages: [
@@ -208,7 +220,7 @@ const chatData = [
       },
       {
         id: 5,
-        content: "Random Msg to Test my App",
+        content: "dasdasdsa",
         timeStamp: "7:50 PM",
         type: "sender",
       },
@@ -216,7 +228,7 @@ const chatData = [
   },
   {
     id: 6,
-    imageUrl: user2,
+    imageUrl: user6,
     contactName: "Desian Tam",
     isPinned: true,
     messages: [
@@ -250,7 +262,7 @@ const chatData = [
       },
       {
         id: 5,
-        content: "Random Msg to Test my App",
+        content: "dasdasdsa",
         timeStamp: "7:50 PM",
         type: "sender",
       },

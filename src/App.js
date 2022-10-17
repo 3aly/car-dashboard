@@ -17,6 +17,7 @@ import { createContext, useContext, useState } from "react";
 import { ThemeContex } from "./context/theme.contex";
 import { DashBoard } from "../src/pages/dashboard/dashboard.jsx";
 import Calender from "./pages/Calender/Calender.jsx";
+import Messages from "./pages/Messages/Messages";
 
 function App() {
   const { theme } = useContext(ThemeContex);
@@ -34,6 +35,7 @@ function App() {
           <Route exact path="booking" element={<Booking />} />
           <Route exact path="assets" element={<Assets />} />
         </Route>
+        <Route exact path="messages" element={<Messages />} />
       </Routes>
     </div>
   );
