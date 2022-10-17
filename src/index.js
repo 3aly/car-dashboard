@@ -7,6 +7,7 @@ import { BrowserRouter } from "react-router-dom";
 import { ThemeProvider } from "./context/theme.contex";
 import { LikeProvider } from "./context/like.context.jsx";
 import { CarsProvider } from "./context/cars.context";
+import { MessagesProvider } from "./context/messages.context";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -14,7 +15,9 @@ root.render(
     <BrowserRouter>
       <ThemeProvider>
         <CarsProvider>
-          <App />
+          <MessagesProvider>
+            <App />
+          </MessagesProvider>
         </CarsProvider>
       </ThemeProvider>
     </BrowserRouter>

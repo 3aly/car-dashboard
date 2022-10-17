@@ -1,0 +1,11 @@
+.chathead {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin: 5% 0%;
+  img {
+    width: 20%;
+    height: 20%;
+    margin: 2%;
+  }
+}

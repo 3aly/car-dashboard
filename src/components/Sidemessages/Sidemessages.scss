@@ -1,0 +1,25 @@
+.sidemessages {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  .search-container {
+    display: flex;
+    width: 100%;
+    height: 60%;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0% 2%;
+    margin: 2% 0%;
+    background: #1f2128;
+    input {
+      background-repeat: no-repeat;
+      padding: 2% 15%;
+      border: none;
+      width: 100%;
+      height: 90%;
+      background-position-y: center;
+      background-position-x: end;
+      background-color: inherit;
+    }
+  }
+}
