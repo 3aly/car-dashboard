@@ -1,10 +1,12 @@
 .chathead {
+  display: flex;
   flex-direction: row;
   align-items: center;
   margin: 5% 0%;
   text-align: start;
   max-width: 90%;
   overflow-x: hidden;
+  gap: 2%;
 
   img {
     width: 20%;
@@ -15,5 +17,6 @@
     font-weight: 300;
     font-size: 90%;
     overflow-x: hidden;
+    white-space: nowrap;
   }
 }

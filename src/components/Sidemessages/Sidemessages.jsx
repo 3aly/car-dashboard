@@ -32,8 +32,10 @@ export const SideMessages = ({ users }) => {
             <ChatHeads
               imgUrl={user.imageUrl}
               title={user.username}
-              lastMessage={messages.map((message) => {
-                if (message.username === user.username) return message.text;
+              lastMessage={messages.map((message, index) => {
+                if (message.username === user.username) {
+                  if (index === messages.length - 1) return message.text;
+                }
               })}
             />
           );

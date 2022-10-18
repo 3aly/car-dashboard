@@ -3,18 +3,16 @@ import "./MessagePiece.scss";
 
 const MessagePiece = ({ message, index, user }) => {
   return (
-    <div key={index} className="message">
+    <div
+      key={index}
+      className={message.username === user.username ? " sender" : " recipient"}
+    >
+      {" "}
       <div className="avatar">
         <img className="img-fluid rounded-circle" src={message.imageUrl} />
       </div>
-      <div
-        className={
-          message.username === user.username ? " sender" : " recipient"
-        }
-      >
-        <p>{`${message.text} `}</p>
-        <span className="time">{`${message.time}`}</span>
-      </div>
+      <p>{`${message.text} `}</p>
+      <span className="time">{`${message.time}`}</span>
     </div>
   );
 };

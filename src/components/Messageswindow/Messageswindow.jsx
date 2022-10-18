@@ -9,11 +9,14 @@ export const MessagesWindow = ({ id, users }) => {
 
   return (
     <div className="messageswindow">
-      <ChatNav user={users[0]} />
-      <ChatWindow user={users[0]} onMessage={onMessage} />
-      {/* {users.map((user, index) => {
-        return <div className="messageswindow"></div>;
-      })} */}
+      {users.map((user, index) => {
+        return (
+          <div className="messageswindow">
+            <ChatNav user={user} />
+            <ChatWindow user={user} onMessage={onMessage} />
+          </div>
+        );
+      })}
     </div>
   );
 };

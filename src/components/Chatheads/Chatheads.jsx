@@ -7,7 +7,10 @@ const ChatHeads = ({ imgUrl, title, lastMessage }) => {
       <img className="img-fluid  rounded-circle" src={imgUrl} />
       <div>
         <h5>{title}</h5>
-        <span style={{ maxWidth: "50%" }}>{lastMessage}</span>
+        <div className="lastmessage">
+          {" "}
+          <span>{lastMessage}</span>
+        </div>
       </div>
     </div>
   );

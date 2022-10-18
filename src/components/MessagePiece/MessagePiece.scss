@@ -1,57 +1,86 @@
-.message {
+.sender {
   display: flex;
   flex-direction: row;
   max-width: 90%;
   min-width: 90%;
-  .avatar {
-    min-width: 10%;
-    min-height: 10%;
-    max-width: 10%;
-    max-height: 10%;
-  }
+
   margin: 5% 0%;
-  .sender {
-    margin-top: 2%;
 
-    display: flex;
-    flex-direction: row;
+  margin-top: 2%;
 
-    p {
-      background: #2b2e38;
-      border-radius: 0px 10px 10px 10px;
-      text-align: start;
-      max-width: 80%;
-      min-width: 20%;
-      padding: 2% 0.9rem;
+  display: flex;
+  flex-direction: row;
 
-      margin-left: 2%;
+  p {
+    background: #2b2e38;
+    border-radius: 0px 10px 10px 10px;
+    text-align: start;
+    max-width: 80%;
+    min-width: 20%;
+    padding: 2% 0.9rem;
 
-      word-wrap: break-word;
-      word-break: break-all;
-    }
-    .time {
-      font-size: 80%;
-      align-self: flex-end;
-      width: 10%;
-    }
+    margin-left: 2%;
+
+    word-wrap: break-word;
+    word-break: break-all;
   }
-  .recipient {
-    display: flex;
+  .time {
+    font-size: 80%;
+    align-self: flex-end;
+    width: 10%;
+  }
+}
+.recipient {
+  display: flex;
+  flex-direction: row;
+  max-width: 90%;
+  min-width: 90%;
 
-    flex-direction: row-reverse;
+  margin: 5% 0%;
 
-    max-width: 100%;
+  display: flex;
+  flex-direction: row-reverse;
+
+  p {
     background: #a162f7;
     border-radius: 10px 0px 10px 10px;
-    min-height: 20%;
-    text-align: end;
-    padding: 1% 2% 2% 1%;
-    margin-right: 2%;
+    text-align: start;
+    max-width: 80%;
+    min-width: 20%;
+    padding: 2% 0.9rem;
     margin-top: 5%;
 
-    .time {
-      font-size: 80%;
-      align-self: flex-end;
-    }
+    margin-right: 2%;
+
+    word-wrap: break-word;
+    word-break: break-all;
+  }
+  .time {
+    font-size: 80%;
+    align-self: flex-end;
+    width: 10%;
+  }
+}
+.dasd {
+  display: flex;
+
+  .avatar {
+    align-self: flex-end;
+  }
+
+  flex-direction: row-reverse;
+
+  max-width: 100%;
+  background: #a162f7;
+  border-radius: 10px 0px 10px 10px;
+  min-height: 20%;
+  text-align: end;
+  padding: 1% 2% 2% 1%;
+  margin-right: 2%;
+  margin-top: 5%;
+
+  .time {
+    font-size: 80%;
+    align-self: flex-end;
   }
 }
