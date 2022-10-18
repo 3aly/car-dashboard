@@ -1,13 +1,13 @@
 import React from "react";
-import Styles from "./Chathead.scss";
+import "./Chathead.scss";
 
 const ChatHeads = ({ imgUrl, title, lastMessage }) => {
   return (
     <div className="chathead">
       <img className="img-fluid  rounded-circle" src={imgUrl} />
-      <div className="text-start">
-        <h6>{title}</h6>
-        <span>{lastMessage}</span>
+      <div>
+        <h5>{title}</h5>
+        <span style={{ maxWidth: "50%" }}>{lastMessage}</span>
       </div>
     </div>
   );

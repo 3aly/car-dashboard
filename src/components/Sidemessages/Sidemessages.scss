@@ -1,7 +1,9 @@
 .sidemessages {
   display: flex;
   flex-direction: column;
-  width: 50%;
+  max-width: 100%;
+  height: 100%;
+  padding: 3%;
   .search-container {
     display: flex;
     width: 90%;

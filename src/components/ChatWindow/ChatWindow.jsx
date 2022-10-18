@@ -1,28 +1,21 @@
 import React, { useContext } from "react";
 import { MessagesContex } from "../../context/messages.context";
 import AddMessage from "../AddMessage/AddMessage";
-import Styles from "./ChatWindow.module.scss";
+import MessagePiece from "../MessagePiece/MessagePiece";
+import "./ChatWindow.scss";
 
-const ChatWindow = ({ user, onMessage }) => {
+const ChatWindow = ({ user }) => {
   const { messages } = useContext(MessagesContex);
   console.log(user.username, "user");
+  console.log(messages, "messages");
+
   return (
-    <div>
-      <ul className="message-list">
-        {messages.map((message, index) => (
-          <span
-            key={index}
-            className={
-              message.username === user.username
-                ? "message sender"
-                : "message recipient"
-            }
-          >
-            <p>{`${message.username}: ${message.text}`}</p>
-          </span>
-        ))}
-      </ul>
-      <AddMessage username={user.username} />
+    <div className="chatwindow">
+      {messages.map((message, index) => (
+        <MessagePiece message={message} index={index} user={user} />
+      ))}
+
+      <AddMessage user={user} />
     </div>
   );
 };

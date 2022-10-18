@@ -15,7 +15,7 @@ const Messages = () => {
 
   return (
     <div className="messages">
-      <SideMessages users={users} />
+      {/* <SideMessages users={users} /> */}
       <MessagesWindow users={users} />
     </div>
   );

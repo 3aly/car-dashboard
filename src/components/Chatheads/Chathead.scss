@@ -1,11 +1,19 @@
 .chathead {
-  display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: center;
   margin: 5% 0%;
+  text-align: start;
+  max-width: 90%;
+  overflow-x: hidden;
+
   img {
     width: 20%;
     height: 20%;
     margin: 2%;
+  }
+  span {
+    font-weight: 300;
+    font-size: 90%;
+    overflow-x: hidden;
   }
 }

@@ -5,19 +5,21 @@
     flex-direction: column;
 
     text-align: start;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-y: scroll;
 
-    width: 150%;
+    width: inherit;
     color: white;
     position: absolute;
-    padding-top: 10%;
     top: 9%;
     left: 15%;
-    height: 91%;
+    height: 90%;
 
     .left {
-      width: 50%;
+      .notes {
+        width: 50%;
+      }
+      width: 55%;
       .chartholder {
         background: #242731;
         padding: 2% 1%;
@@ -86,7 +88,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       height: 40rem;
-      width: 30%;
+      width: 35%;
       align-content: space-between;
       color: white;
 
@@ -95,8 +97,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         gap: 35px 5px;
-        height: fit-content;
-        width: fit-content;
+        width: 100%;
         justify-content: center;
         align-content: center;
 
@@ -150,19 +151,22 @@
     flex-direction: column;
 
     text-align: start;
-    justify-content: center;
+    justify-content: flex-start;
     overflow-y: scroll;
 
-    width: 150%;
+    width: inherit;
     color: rgb(0, 0, 0);
     position: absolute;
-    padding-top: 10%;
     top: 9%;
     left: 15%;
-    height: 91%;
+    height: 90%;
 
     .left {
-      width: 50%;
+      width: 60%;
+      .notes {
+        width: 50%;
+      }
+      width: 55%;
       .chartholder {
         background: #ffffff;
         padding: 2% 1%;
@@ -231,7 +235,7 @@
       flex-direction: row;
       flex-wrap: wrap;
       height: 40rem;
-      width: 30%;
+      width: 35%;
       align-content: space-between;
       color: white;
 

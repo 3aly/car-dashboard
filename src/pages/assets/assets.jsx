@@ -59,7 +59,7 @@ export const Assets = () => {
           <div className="container justify-content-between py-0 px-0 my-3 ">
             <img
               src={theme === "dark" ? notesd : notes}
-              className="fluid-img  my-0 mx-1 "
+              className="fluid-img  my-0 mx-1 notes"
             />
             <div className="sensors mx-1 ">
               <div className="title container justify-content-between align-items-center p-0">
@@ -76,7 +76,7 @@ export const Assets = () => {
                 <SensorItem title={"Asset - Runtime (km)"} />
                 <SensorItem title={"Engine Temperature (deg C)"} />
               </div>
-              <button>See All</button>
+              <button style={{ color: "white" }}>See All</button>
             </div>
           </div>
           <div className="reminder text-start">
