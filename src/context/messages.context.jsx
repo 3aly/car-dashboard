@@ -5,12 +5,13 @@ export const MessagesContex = createContext([]);
 export const MessagesProvider = ({ children }) => {
   const [messages, setMessages] = useState([]);
 
-  const onMessage = (username, message, imageUrl, time) => {
+  const onMessage = (username, message, imageUrl, time, stamp) => {
     const newMessage = {
       username: username,
       text: message,
       imageUrl: imageUrl,
       time: time,
+      stamp: stamp,
     };
 
     setMessages(messages.concat([newMessage]));

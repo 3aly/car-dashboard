@@ -1,7 +1,25 @@
-.messages {
-  display: flex;
-  width: 1000px;
-  height: 1000px;
-  background: #242731;
-  color: white;
+#dark {
+  .messages {
+    display: flex;
+    position: absolute;
+    top: 13%;
+    width: 81%;
+    left: 17%;
+    height: 85%;
+    background: #242731;
+    color: white;
+  }
+}
+
+#light {
+  .messages {
+    display: flex;
+    position: absolute;
+    top: 13%;
+    width: 81%;
+    left: 17%;
+    height: 85%;
+    background: #ffff;
+    color: rgb(0, 0, 0);
+  }
 }

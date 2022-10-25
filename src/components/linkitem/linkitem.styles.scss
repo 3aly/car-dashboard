@@ -10,9 +10,12 @@
     padding: 0% 2%;
     border-radius: 5px;
     &:hover {
-      background-color: #a162f7;
+      background: #292e3d;
       color: white;
       transition: all 0.2s;
+    }
+    &:active {
+      color: white;
     }
   }
   margin: 4% 0%;

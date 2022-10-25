@@ -12,15 +12,15 @@ import { MessagesProvider } from "./context/messages.context";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <ThemeProvider>
+    <ThemeProvider>
+      <BrowserRouter>
         <CarsProvider>
           <MessagesProvider>
             <App />
           </MessagesProvider>
         </CarsProvider>
-      </ThemeProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </ThemeProvider>
   </React.StrictMode>
 );
 

@@ -13,7 +13,7 @@
       transition: all 0.2s;
     }
   }
-  .active {
+  .isActive {
     border-radius: 4px;
 
     background: #292e3d;
@@ -43,7 +43,7 @@
       transition: all 0.2s;
     }
   }
-  .active {
+  .isActive {
     border-radius: 4px;
     background: rgba(161, 98, 247, 0.1);
 

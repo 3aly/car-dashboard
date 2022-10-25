@@ -6,7 +6,7 @@ import more from "../../Icons/chatnav3.png";
 
 const ChatNav = ({ user }) => {
   return (
-    <div className="chatnav">
+    <div className="chatnavi">
       <div className="title">
         {" "}
         <img className="img-fluid  rounded-circle" src={user.imageUrl} />{" "}

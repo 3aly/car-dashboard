@@ -2,9 +2,11 @@ import React from "react";
 import "./tabscontainer.styles.scss";
 
 export const TabsContainer = ({ tab }) => {
-  const { name, active } = tab;
+  const { name, isActive } = tab;
   return (
-    <div className={`tab ${active ? "active" : ""} d-flex align-items-center`}>
+    <div
+      className={`tab ${isActive ? "isActive" : ""} d-flex align-items-center`}
+    >
       <span>{name}</span>
     </div>
   );

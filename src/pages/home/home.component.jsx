@@ -12,11 +12,11 @@ import male from "../../Icons/Home/male.png";
 import { ThemeContex } from "../../context/theme.contex";
 
 const tabs = [
-  { name: "MyDetails", active: false },
-  { name: "Profile", active: true },
-  { name: "Password", active: false },
-  { name: "Email", active: false },
-  { name: "Notification", active: false },
+  { name: "MyDetails", isActive: false },
+  { name: "Profile", isActive: true },
+  { name: "Password", isActive: false },
+  { name: "Email", isActive: false },
+  { name: "Notification", isActive: false },
 ];
 const user = {
   name: "Man",
